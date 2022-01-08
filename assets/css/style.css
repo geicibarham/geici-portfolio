@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+   
+    background-color:  #070f4e;
+}
+
+header {
+    background-image: url(../images/giphy\ \(1\).gif);
+    padding: 20px 35px;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    background-position: 0%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    z-index: 9999;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+    margin: 50px;
+}
+
+ul li a {
+text-decoration: none;
+color: white;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items:flex-end;
+font-size: 30px;
+padding: 10px 15px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    /* padding:40px 35px; */
+    justify-content: center;
+    background:linear-gradient(to top, #09203f 0%, #537895 100%);
+    z-index: 9999;
+
+}
+/* footer imgs */
+.contact-img {
+    /* margin:30px; */
+   justify-content: space-evenly;
+   padding:10px;
+   z-index: 9999;
+ 
+}
+
