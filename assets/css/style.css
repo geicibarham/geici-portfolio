@@ -3,88 +3,194 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color:white;
+   
     
 }
 
 body {
+    font-family: Helvetica, Arial, sans-serif;
+    /* background: radial-gradient(circle at 10% 20%, rgb(0, 107, 141) 0%, rgb(0, 69, 91) 90%); */
+    background-color: black;
    
-    background-color:  #070f4e;
 }
 
+/* header starts */
 header {
-    background-image: url(../images/giphy\ \(1\).gif);
-    padding: 20px 35px;
+    background-image: url(../images/plexus1.gif);
+    background-size: cover;
+    padding: 10px,15px;
     background-size: cover;
     background-attachment: fixed;
-    top: 0;
-    background-position: 0%;
+    background-position: 80%;
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    z-index: 9999;
+     justify-content: space-between;
+    flex-wrap: wrap;
+     z-index: 9999;
+    position: -webkit-sticky;
+        position: sticky;
+        top: 0;
 }
+
+header h1 {
+    color: white;
+    font-size: 35px;
+    align-content: flex-start;
+    left: 0;
+    padding:20px;
+}
+
+
+header nav {
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 7px 0;
+}
+
 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
     list-style: none;
-    margin: 50px;
 }
 
+li {
+    /* align-self: flex-end; */
+    margin-left: 35px;
+ }
+
 ul li a {
+    font-weight: lighter;
 text-decoration: none;
 color: white;
 display: flex;
-flex-wrap: wrap;
+flex-wrap: wrap;    
 justify-content: space-between;
 align-items:flex-end;
-font-size: 30px;
-padding: 10px 15px;
+font-size: 25px;
+padding: 10px 25px;
 }
+
+header nav ul li a:hover {
+    color:#93deff; 
+    font-size: 30px;
+    text-shadow: none;
+  }
+
+
+/* header ends */
+
+.hero {
+    background-image: url(../images/plexus1.gif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+background-position: 80%;
+padding: 80px;
+}
+
+/* content starts */
+
+/* this class targets all h2s */
+.title{
+    font-weight: lighter;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:15px;
+}
+
 
 .about {
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+     margin: 10px 10px;
+    background-color:black;
+   justify-content: space-around;
+   align-items:center; 
+   border-bottom:grey 2px solid;
+   
+
+}
+.geici {
+    padding: 20px;
+   width: 200px;
+   height: 200px;
+    border-radius: 100px;
+   
+   }
+ p{
+    text-align: justify;
+    text-justify: inter-word;
+     padding:0px;
+     text-align: justify;
+ }
+
+
+
+.skills{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    font-weight: bold;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+
 }
 
+ul li {
+    padding:10px;
+    text-decoration: none;
+    list-style: none;
+}
+/* work starts */
 
+.work {
+   margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.dogs{
+    flex:1;
+    width:300px;
+    height:300px;
+    margin-left:30px;
+    padding-left: 15px;
+    padding-top: 10px;
+  
+}
 
+.dogs:hover{
+    width:315px;
+    height:315px;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* footer starts */
 
 footer {
     width: 100%;
+    padding: 40px 35px;
     display: flex;
-    flex-wrap: nowrap;
-    align-content: flex-end;
-    /* padding:40px 35px; */
     justify-content: center;
-    background:linear-gradient(to top, #09203f 0%, #537895 100%);
-    z-index: 9999;
-
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+ 
 }
 /* footer imgs */
-.contact-img {
-    /* margin:30px; */
-   justify-content: space-evenly;
-   padding:10px;
-   z-index: 9999;
- 
+.github {
+    margin-right: 13px;
 }
 
