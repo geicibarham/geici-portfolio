@@ -34,10 +34,11 @@ header {
 
 header h1 {
     color: white;
-    font-size: 35px;
+    font-size: 25px;
     align-content: flex-start;
     left: 0;
-    padding:20px;
+    padding:25px;
+    font-weight: lighter;
 }
 
 
@@ -68,13 +69,13 @@ display: flex;
 flex-wrap: wrap;    
 justify-content: space-between;
 align-items:flex-end;
-font-size: 25px;
-padding: 10px 25px;
+font-size: 20px;
+
 }
 
 header nav ul li a:hover {
     color:#93deff; 
-    font-size: 30px;
+    font-size: 25px;
     text-shadow: none;
   }
 
@@ -102,9 +103,18 @@ padding: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding:15px;
-}
+    border-bottom: solid 1px #455d7a;
+    /* border-bottom: 1px solid radial-gradient(circle at 10% 20%, rgb(0, 107, 141) 0%, rgb(0, 69, 91) 90%); */
+    width: 50%;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 10%;
 
+ 
+}
 
 .about {
     display: flex;
@@ -116,24 +126,38 @@ padding: 80px;
     background-color:black;
    justify-content: space-around;
    align-items:center; 
-   border-bottom:grey 2px solid;
-   
-
 }
 .geici {
-    padding: 20px;
+    padding: 15px;
    width: 200px;
    height: 200px;
-    border-radius: 100px;
-   
+    /* border-radius: 100px; */
+   }
+
+   .profile{
+       display: flex;
+       flex-wrap: wrap;
+       text-align:left;
+       border: solid 1px #455d7a;
+       width: 22%;
+       margin-left: 20px;
+       padding:0px;
+   }
+
+   .profile li{
+       list-style: none;
+       margin-left: 5px;
+       border-bottom: solid 1px #455d7a;
    }
  p{
-    text-align: justify;
     text-justify: inter-word;
      padding:0px;
      text-align: justify;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
  }
-
 
 
 .skills{
@@ -160,34 +184,32 @@ ul li {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.dogs{
-    flex:1;
-    width:300px;
-    height:300px;
-    margin-left:30px;
-    padding-left: 15px;
-    padding-top: 10px;
-  
-}
+.dogs img{
+        flex:1;
+        width:300px;
+        margin-left:30px;
+        padding-left: 15px;
+        padding-top: 10px;
+      
+    }
 
 .dogs:hover{
-    width:315px;
-    height:315px;
+    transform: scale(1.1); 
 
 }
 
 /* footer starts */
 
 footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
     width: 100%;
-    padding: 40px 35px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    bottom: 0;
-    position: fixed;
- 
 }
 /* footer imgs */
 .github {
