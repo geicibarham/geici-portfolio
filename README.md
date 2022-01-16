@@ -5,7 +5,7 @@ Usage
 
 Click the image cards in the "Work" section to be brought to that application's deployed page.
 
-![geici web](https://user-images.githubusercontent.com/94714070/149640917-db398b4d-d212-4dc2-8bd0-ee4645268e49.png)
+![geici web](https://C:\Users\geici\OneDrive\Desktop\unc bootcamp\challenges\geici-portfolio\assets\images\screenshot(15))
 
 
 Credits
