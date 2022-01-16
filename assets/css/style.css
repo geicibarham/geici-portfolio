@@ -1,14 +1,17 @@
+:root{
+    --primary-color: #6643b5;
+}
 
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
     color:white;
+   
 }
-
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: black;
+   background-color:var(--primary-color);
 }
 
 /* header starts */
@@ -20,7 +23,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url(../images/plexus1.gif);
+    background-image: url(../images/abstract.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -57,24 +60,32 @@ padding: 20px;
 }
 
 header nav ul li a:hover {
-    color:#93deff; 
     font-size: 25px;
-    background:black;
+    background: var(--primary-color);
     border-radius: 15px;
   }
 /* header ends */
 
+h1 {
+    padding:50px;
+    font-size:30px;
+}
+
+h1::after{
+    content:"Web Developer";
+    font-weight: lighter;
+    font-size: 25px;
+}
 .hero {
-background-image: url(../images/plexus1.gif);
+background-image: url(../images/abstract.jpg);
 background-size: cover;
 background-position: center;
-display: flex;
+/* display: flex; */
 justify-content: flex-start;
 flex-wrap: wrap;
 align-items: flex-start;
 background-attachment: fixed;
 background-position: 80%;
-
 }
 
 
@@ -116,7 +127,6 @@ h2{
  }
  .free-time {
      color:silver;
-     opacity: 0.5;
      font-weight: bold;
  }
 
@@ -201,14 +211,11 @@ footer a{
 
 /* Media Queries */
 @media screen and (max-width: 980px) {
-    header {
-        position: relative;
-           padding-bottom: 0;
-           justify-content: center;
+
+    body{
+        margin: 0px;
        }
-       .hero img{
-           width:50%;
-       }
+
 
     .work{
         display:flex;
@@ -221,12 +228,34 @@ footer a{
         padding-bottom:20px;
     }
 
+    @media screen and (max-width: 768px) { 
+        body{
+            margin: 0px;
+           }
+        header {
+             align-content: flex-start;
+             background-color: black;
+            }
+
+    }
 
     @media screen and (max-width: 575px) {
+        body{
+            margin: 0px;
+           }
+
+        header ul li{
+        display:flex;
+        flex-wrap: wrap;
+        font-size: 10px;
+        align-content: center;
+        }
+    
+ .hero,nav{
+     width:100%;
+ }
     .about {
         display: flex;
-        /* flex-wrap: nowrap; */
-        /* flex-direction: column; */
        align-items:center;
        justify-content: center;
     }
