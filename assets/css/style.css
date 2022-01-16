@@ -211,12 +211,23 @@ footer a{
 
 /* Media Queries */
 @media screen and (max-width: 980px) {
+    header {
+           position: relative;
+           padding-bottom: 0;
+           justify-content: center;
+       }
 
+       header h1 {
+        width: 100%;
+        text-align: center;
+    }
+nav ul li{
+    align-items:center;
+    width:100%;
+}
     body{
         margin: 0px;
        }
-
-
     .work{
         display:flex;
         flex-wrap: wrap;
@@ -227,33 +238,41 @@ footer a{
     .run-buddy,.horiseon,.robot {
         padding-bottom:20px;
     }
-
-    @media screen and (max-width: 768px) { 
-        body{
-            margin: 0px;
-           }
-        header {
-             align-content: flex-start;
-             background-color: black;
-            }
-
-    }
-
+       
     @media screen and (max-width: 575px) {
-        body{
-            margin: 0px;
+     
+        header{
+            position: relative;
+            padding-bottom: 0;
+            justify-content: center;
+        }
+ 
+        h1{
+            text-shadow: 0 0 5px black;
+        }
+           .hero {
+               align-items: flex-end;
+               justify-content: center;
+
+           }
+           .hero img {
+            width: max-content;
+            right:0;
+            padding:0;
            }
 
-        header ul li{
-        display:flex;
-        flex-wrap: wrap;
-        font-size: 10px;
-        align-content: center;
+        header nav ul li a{
+    justify-content: flex-start;
+        font-size: 20px;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        flex-direction: row;
+       font-weight: bold;
+       padding-top: 0px;
         }
-    
- .hero,nav{
-     width:100%;
- }
+
     .about {
         display: flex;
        align-items:center;
@@ -276,6 +295,5 @@ footer a{
         padding-left: 40px;
         padding-bottom: 10px;
     }
-    
-    }
+}
 }
