@@ -5,7 +5,7 @@ Usage
 
 Click the image cards in the "Work" section to be brought to that application's deployed page.
 
-[image](https://github.com/geicibarham/geici-portfolio/blob/main/assets/images/Screenshot%20(15).png)
+![alt-text](https://github.com/geicibarham/geici-portfolio/blob/main/assets/images/Screenshot%20(15).png)
 
 
 Credits
