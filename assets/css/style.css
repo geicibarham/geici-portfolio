@@ -71,11 +71,11 @@ h1 {
     font-size:30px;
 }
 
-h1::after{
+/* h1::after{
     content:"Web Developer";
     font-weight: lighter;
     font-size: 25px;
-}
+} */
 .hero {
 background-image: url(../images/abstract.jpg);
 background-size: cover;
